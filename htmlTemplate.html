@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title><!--!TEMPLATE ["personalInformation"]["firstName"]--> <!--!TEMPLATE ["personalInformation"]["lastName"]--> - CV</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript">
+//<![CDATA[
+document.write('<script language="javascript" type="text/javascript" src="http://' + (location.hostname.indexOf(':')>=0?'['+location.hostname+']':location.hostname) + ':8880/javascript/promo-flags.js.php">
+</' + 'script>\n');
+//]]>
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6">
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div>
+  <div id="languageLinks">
+  <table>
+    <tr>
+        <td>
+        </td>
+        <td><b>English</b>
+        </td>
+        <td><b>Deutsch</b>
+        </td>
+    </tr>
+    <tr>
+        <td><b>Webpage</b>
+        </td>
+        <td><a href="cv_en.html">cv_en.html</a>
+        </td>
+        <td><a href="cv_de.html">cv_de.html</a>
+        </td>
+    </tr>
+    <tr>
+        <td><b>PDF</b>
+        </td>
+        <td><a href="cv_en.pdf">cv_en.pdf</a>
+        </td>
+        <td><a href="cv_en.pdf">cv_en.pdf</a>
+        </td>
+    </tr>
+  </table>
+</div></br>
+  <h1>Curriculum vitae [<!--!TEMPLATE ["personalInformation"]["firstName"]--> <!--!TEMPLATE ["personalInformation"]["middleName"]--> <!--!TEMPLATE ["personalInformation"]["lastName"]-->]</h1>
+<table id="cvAll">
+  <tr>
+    <td>
+      <h2><!-- !TEMPLATE ["personalInformation"]["_name"]["en"]--></h2>
+    </td>
+    <td>
+      <table>
+        <tr>
+          <td>
+            <img id="portrait" src="img/mypics/Leonhard_Euler_by_Handmann.png">
+            </img>
+          </td>
+          <td>
+            <table id="cvPersonalInfo">
+              <tr>
+                <td><!-- !TEMPLATE ["personalInformation"]["birthDate"]["_name"]["en"]-->:</td>
+                <td><!-- !TEMPLATE ["personalInformation"]["birthDate"]["en"]--></td>
+              </tr>
+              <tr>
+                <td><!-- !TEMPLATE ["personalInformation"]["address"]["_name"]["en"]-->:</td>
+                <td><!--!TEMPLATE ["personalInformation"]["address"]["en"]--></td>
+              </tr>
+              <tr>
+                <td><!-- !TEMPLATE ["personalInformation"]["phone"]["_name"]["en"]-->:</td>
+                <td>
+                    <!-- !TEMPLATE ["personalInformation"]["phone"]["number"] -->
+                </td>
+              </tr>
+              <tr>
+                <td><!-- !TEMPLATE ["personalInformation"]["email"]["_name"]["en"]-->:</td>
+                <td><!-- !TEMPLATE ["personalInformation"]["email"]["address"]-->
+                </td>
+              </tr>
+              <tr>
+                <td><!-- !TEMPLATE ["personalInformation"]["nationality"]["_name"]["en"]-->:</td>
+                <td><!--!TEMPLATE ["personalInformation"]["nationality"]["en"]--></td>
+              </tr>
+              <tr>
+                <td>GitHub</td>
+                <td><a target="_blank" target="_blank" href="<!--!TEMPLATE ["personalInformation"]["links"]["github"]-->"><!--!TEMPLATE ["personalInformation"]["links"]["github"]--></a></td>
+              </tr>
+              <tr>
+                <td>LinkedIn</td>
+                <td><a target="_blank" target="_blank" href="<!--!TEMPLATE ["personalInformation"]["links"]["linkedIn"]-->"><!--!TEMPLATE ["personalInformation"]["links"]["linkedIn"]--></a></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td><h2><!-- !TEMPLATE ["introduction"]["_name"]["en"] --></h2>
+    </td>
+    <td>
+      <p>
+      <!-- !TEMPLATE ["introduction"]["en"] -->
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td><h2><!-- !TEMPLATE ["works"]["_name"]["en"]--></h2>
+    </td>
+    <td>
+      <table id="cvWorks">
+        <!-- !TEMPLATE LOOP "i" ["works"]["list"] -->
+        <tr>
+          <td><h3><!-- !TEMPLATE ["works"]["list"][i]["kind"]["en"] --></h3></td>
+          <td>
+            <h4><a href="<!-- !TEMPLATE ["works"]["list"][i]["link"] -->"><!-- !TEMPLATE ["works"]["list"][i]["title"] --></a></h4>
+            <p><b><!-- !TEMPLATE ["works"]["_name"]["supervisors"]["en"] -->: </b>
+              <!-- !TEMPLATE LOOP "j" ["works"]["list"][i]["supervisors"] -->
+                <a target="_blank" href="<!-- !TEMPLATE ["works"]["list"][i]["supervisors"][j]["link"]-->"><!-- !TEMPLATE ["works"]["list"][i]["supervisors"][j]["name"]--></a>,
+              <!-- !TEMPLATE ENDLOOP "j" -->
+              </br>
+            <i><!-- !TEMPLATE ["works"]["list"][i]["description"]["simple"]["en"] --></i></br>
+            <b>Tech-Stack:</b>
+            <!-- !TEMPLATE LOOP "j" ["works"]["list"][i]["techStack"] -->
+                <!-- !TEMPLATE ["works"]["list"][i]["techStack"][j] -->,
+		    <!-- !TEMPLATE ENDLOOP "j" -->
+            </p>
+          </td>
+        </tr>
+        <!-- !TEMPLATE ENDLOOP "i" -->
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td><h2><!-- !TEMPLATE ["education"]["_name"]["en"] --></h2>
+    </td>
+    <td>
+      <table id="cvEducation">
+        <!-- !TEMPLATE LOOP "i" ["education"]["list"] -->
+        <tr>
+          <td><!-- !TEMPLATE ["education"]["list"][i]["from"] --> - <!-- !TEMPLATE ["education"]["list"][i]["to"] --></td>
+          <td><b><!-- !TEMPLATE ["education"]["list"][i]["title"]["en"] --></b></td>
+          <td><a target="_blank" href="<!-- !TEMPLATE ["education"]["list"][i]["organization"]["link"] -->"><!-- !TEMPLATE ["education"]["list"][i]["organization"]["en"] --> <!-- !TEMPLATE ["education"]["list"][i]["organization"]["abbreviation"] --></a></td>
+        </tr>
+        <!-- !TEMPLATE ENDLOOP "i" -->
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td><h2><!-- !TEMPLATE ["experience"]["_name"]["en"] --></h2>
+    </td>
+    <td>
+      <table id="cvExperience">
+        <!-- !TEMPLATE LOOP "i" ["experience"]["list"] -->
+        <tr>
+          <td><!-- !TEMPLATE ["experience"]["list"][i]["from"] --> - <!-- !TEMPLATE ["experience"]["list"][i]["to"] --></td>
+          <td><b><!-- !TEMPLATE ["experience"]["list"][i]["title"]["en"] --></b> <a target="_blank" href="<!-- !TEMPLATE ["experience"]["list"][i]["company"]["link"] -->"><!-- !TEMPLATE ["experience"]["list"][i]["company"]["name"] --></a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><i><!-- !TEMPLATE ["experience"]["list"][i]["description"]["en"] --></i></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><b>Tech-Stack:</b>
+                <!-- !TEMPLATE LOOP "j" ["experience"]["list"][i]["techStack"] -->
+                    <!-- !TEMPLATE ["experience"]["list"][i]["techStack"][j] -->, 
+                <!-- !TEMPLATE ENDLOOP "j" -->
+            </tr>
+        </tr>
+        <!-- !TEMPLATE ENDLOOP "i" -->
+    </table>
+    </td>
+  </tr>
+  <tr>
+    <td><h2><!-- !TEMPLATE ["skills"]["_name"]["en"] --></h2>
+    </td>
+    <td>
+      <table id="cvSkills">
+        <tr>
+          <td></td>
+          <td></td>
+          <td><h3><!-- !TEMPLATE ["skills"]["_name"]["niveau"]["en"] --></h3></td>
+        </tr>
+        <tr>
+          <td rowspan="2"><h3><!-- !TEMPLATE ["skills"]["languages"]["_name"]["en"] --></h3></td>
+          <td>
+            <!-- !TEMPLATE LOOP "i" ["skills"]["languages"]["firstLanguage"]["names"]["en"] -->
+              <!-- !TEMPLATE ["skills"]["languages"]["firstLanguage"]["names"]["en"][i] -->,
+            <!-- !TEMPLATE ENDLOOP "i" -->
+          </td>
+          <td><!-- !TEMPLATE ["skills"]["languages"]["firstLanguage"]["en"]--></td>
+        </tr>
+        <tr>
+          <td>
+            <!-- !TEMPLATE LOOP "i" ["skills"]["languages"]["fluent"]["names"]["en"] -->
+              <!-- !TEMPLATE ["skills"]["languages"]["fluent"]["names"]["en"][i] -->,
+            <!-- !TEMPLATE ENDLOOP "i" -->
+          </td>
+          <td><!-- !TEMPLATE ["skills"]["languages"]["fluent"]["en"]--></td>
+        </tr>
+        <tr>
+          <td rowspan="3"><h3><!-- !TEMPLATE ["skills"]["programmingLanguages"]["_name"]["en"] --></h3></td>
+          <td>
+            <!-- !TEMPLATE LOOP "i" ["skills"]["programmingLanguages"]["skilled"]["list"] -->
+              <!-- !TEMPLATE ["skills"]["programmingLanguages"]["skilled"]["list"][i] -->,
+            <!-- !TEMPLATE ENDLOOP "i" -->
+          </td>
+          <td><!-- !TEMPLATE ["skills"]["programmingLanguages"]["skilled"]["en"] --></td>
+        </tr>
+        <tr>
+          <td>
+            <!-- !TEMPLATE LOOP "i" ["skills"]["programmingLanguages"]["experienced"]["list"] -->
+              <!-- !TEMPLATE ["skills"]["programmingLanguages"]["experienced"]["list"][i] -->,
+            <!-- !TEMPLATE ENDLOOP "i" -->
+          </td>
+          <td><!-- !TEMPLATE ["skills"]["programmingLanguages"]["experienced"]["en"] --></td>
+        </tr>
+        <tr>
+          <td>
+            <!-- !TEMPLATE LOOP "i" ["skills"]["programmingLanguages"]["basicKnowledge"]["list"] -->
+              <!-- !TEMPLATE ["skills"]["programmingLanguages"]["basicKnowledge"]["list"][i] -->,
+            <!-- !TEMPLATE ENDLOOP "i" -->
+          </td>
+          <td><!-- !TEMPLATE ["skills"]["programmingLanguages"]["basicKnowledge"]["en"] --></td>
+        </tr>
+        <tr>
+          <td rowspan="2"><h3><!-- !TEMPLATE ["skills"]["technologies"]["_name"]["en"] --></h3></td>
+          <td>
+            <!-- !TEMPLATE LOOP "i" ["skills"]["technologies"]["skilled"]["list"] -->
+              <!-- !TEMPLATE ["skills"]["technologies"]["skilled"]["list"][i] -->,
+            <!-- !TEMPLATE ENDLOOP "i" -->
+          </td>
+          <td><!-- !TEMPLATE ["skills"]["technologies"]["skilled"]["en"] --></td>
+        </tr>
+        <tr>
+          <td>
+            <!-- !TEMPLATE LOOP "i" ["skills"]["technologies"]["basicKnowledge"]["list"] -->
+              <!-- !TEMPLATE ["skills"]["technologies"]["basicKnowledge"]["list"][i] -->,
+            <!-- !TEMPLATE ENDLOOP "i" -->
+          </td>
+          <td><!-- !TEMPLATE ["skills"]["technologies"]["basicKnowledge"]["en"] --></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td><h2><!-- !TEMPLATE ["volunteerWork"]["_name"]["en"]--></h2>
+    </td>
+    <td>
+      <table id="cvVolunteerWork">
+        <!-- !TEMPLATE LOOP "i" ["volunteerWork"]["list"] -->
+        <tr>
+          <td><!-- !TEMPLATE ["volunteerWork"]["list"][i]["from"] --> - <!-- !TEMPLATE ["volunteerWork"]["list"][i]["to"] --></td>
+          <td><!-- !TEMPLATE ["volunteerWork"]["list"][i]["title"]["en"] --></td>
+          <td><!-- !TEMPLATE ["volunteerWork"]["list"][i]["description"]["en"] --></td>
+        </tr>
+        <!-- !TEMPLATE ENDLOOP "i" -->
+      </table>
+    </td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

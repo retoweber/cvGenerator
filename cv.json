@@ -1,0 +1,297 @@
+{
+    "settings": {
+      "language":{
+        "en": "language",
+        "de": "Sprache"
+      },
+      "otherLanguage": {
+        "en": "Deutsch",
+        "de": "English"
+      },
+      "currentLanguage": {
+        "en": "english",
+        "de": "german"
+      }
+    },
+    "personalInformation" : {
+        "_name": {
+          "en": "personal information",
+          "de": "Persönliche Informationen"
+        },
+        "firstName": "Leonhard",
+        "middleName": "",
+        "lastName": "Euler",
+        "birthDate": {
+          "_name": {
+            "en": "date of birth",
+            "de": "Geburtsdatum"
+          },
+          "en": "15 April 1707",
+          "de": "15. April 1707"
+        },
+        "address":{
+          "_name": {
+            "en": "address",
+            "de": "Adresse"
+          },
+          "en": "Baselstrasse 32, 4125 Riehen, Switzerland",
+          "de": "Baselstrasse 32, 4125 Riehen, Schweiz"
+        },
+        "nationality": {
+            "_name": {
+              "en": "nationality",
+              "de": "Nationalität"
+            },
+            "de": "Schweiz",
+            "en": "Switzerland"
+        },
+        "phone": {
+          "_name":{
+            "en": "phone",
+            "de": "Telefonnummer"
+          },
+          "number": "+41 53 669 25 91"
+        },
+        "email": {
+          "_name":{
+            "en": "email",
+            "de": "Email"
+          },
+          "address": "l.euler@swissmail.com"
+        },
+        "links": {
+            "github": "https://github.com/leuler",
+            "linkedIn": "https://linkedin.com/in/leuler",
+            "homepage": "retoweber.info"
+        }
+    },
+    "introduction": {
+        "_name": {
+          "en": "introduction",
+          "de": "Vorstellung"
+        },
+        "en": "I am one of the greates mathematicians in history and contributed in many different areas such as: Mathematical notations, Analysis, Combinatorics, Graph Theory, Phsysics and Music theory.",
+        "de": "Ich bin einer der bedeutedsten Mathematiker der Geschichte und lieferte Beiträge in unterschiedlichen Teilgebieten wie: Mathematische Notation, Analysis, Kombinatorik, Graphentheorie, Phsyik und Musiktheorie."
+    },
+    "works": {
+        "_name": {
+          "en": "works",
+          "de": "Arbeiten",
+          "supervisors": {
+            "en": "supervisors",
+            "de": "Supervisoren"
+          },
+          "description": {
+            "en": "description",
+            "de": "Beschreibung"
+          },
+          "references": {
+            "en": "references",
+            "de": "Referenzen"
+          }
+        },
+        "list": [
+        {
+            "kind": {
+                "en": "Ph.D. Dissertation",
+                "de": "Doktorarbeit"
+            },
+            "title": "De Sono",
+            "link": "",
+            "techStack": ["Python", "Phsysics Simulations", "Mathematics",  "Git"],
+            "supervisors": [
+                {
+                    "name": "Prof. M. Mustermann",
+                    "fullName": "Prof. Max Mustermann",
+                    "link": "https://en.wikipedia.org/wiki/List_of_placeholder_names_by_language"
+                },
+                {
+                    "name": "B. Name",
+                    "fullName": "Beispiel Name",
+                    "link": ""
+                }
+            ],
+            "description": {
+                "simple": {
+                  "de": "Ich beschreibe mathematische modelle welche die Ausbreitung von Schallwellen abbilden.",
+                  "en": "I present mathematical models describing the expansion of sound through air."
+                }
+            }
+        }]
+    },
+    "education":{
+      "_name" : {
+        "en": "education",
+        "de": "Ausbildung"
+      },
+      "list":  [
+          {
+            "from": 1720,
+            "to": 1723,
+            "title": {
+              "en": "Master of Philosophy",
+              "de": "Master in Philosophie"
+            },
+            "organization": {
+              "en": "University of Basel",
+              "de": "Universität Basel",
+              "abbreviation": "[UniBas]",
+              "link": "https://unibas.ch/"
+            }
+          },
+          {
+            "from": 1725,
+            "to": 1726,
+            "title": {
+              "en": "Ph.D. in Physics",
+              "de": "Ph.D. in Physik"
+            },
+            "organization": {
+              "en": "University of Basel",
+              "de": "Universität Basel",
+              "abbreviation": "[UniBas]",
+              "link": "https://unibas.ch/"
+            }
+          }
+      ]
+    },
+    "experience":{
+      "_name" : {
+        "en": "experience",
+        "de": "Erfahrung",
+        "description": {
+          "en": "description",
+          "de": "Beschreibung"
+        }
+      },
+      "list": [
+        {
+          "from": "1741",
+          "to": "1766",
+          "title": {
+            "en": "Mathematician",
+            "de": "Mathematiker"
+          },
+          "company":{
+            "name": "Königlich Preußischen Akademie der Wissenschaften zu Berlin",
+            "link": "https://de.wikipedia.org/wiki/K%C3%B6niglich_Preu%C3%9Fische_Akademie_der_Wissenschaften_zu_Berlin"
+          },
+          "description": {
+            "en" : "I worked on many problems in mathematics.",
+            "de" : "Ich arbeitete an unterschiedlichen Problemen in der Mathematik"
+          },
+          "techStack": ["Mathematics", "Python", "Docker", "Latex", "Git"]
+        },
+        {
+          "from": "1727",
+          "to": "1741",
+          "title": {
+            "en": "Mathematician",
+            "de": "Mathematiker"
+          },
+          "company":{
+            "name": "Kaiserlich Russische Akademie der Wissenschaften in Sankt Petersburg",
+            "link": "https://de.wikipedia.org/wiki/Sankt_Petersburg"
+          },
+          "description": {
+            "en" : "I worked on many problems in mathematics.",
+            "de" : "Ich arbeitete an unterschiedlichen Problemen in der Mathematik"
+          },
+          "techStack": ["Mathematics", "Python", "Docker", "Latex", "Git"]
+        }
+    ]},
+    "skills": {
+      "_name": {
+        "en": "skills",
+        "de": "Fähigkeiten",
+        "niveau": {
+          "en": "niveau",
+          "de": "Niveau"
+        }
+      },
+        "programmingLanguages": {
+          "_name": {
+            "en": "programming languages",
+            "de": "Programmiersprachen"
+          },
+          "skilled": {
+            "en": "skilled",
+            "de": "routiniert",
+            "list": ["Python", "Scala", "HTML", "CSS"]
+          },
+          "experienced": {
+            "en": "experienced",
+            "de": "geübt",
+            "list": ["C++"]
+          },
+          "basicKnowledge": {
+            "en": "basic knowledge",
+            "de": "Grundwissen",
+            "list": ["C", "Matlab", "Java", "Javascript", "Bash"]
+          }
+        },
+        "technologies":{
+          "_name": {
+            "en": "technologies",
+            "de": "Technologien"
+          },
+          "skilled": {
+            "en": "skilled",
+            "de": "routiniert",
+            "list": ["Docker", "Tensorflow", "Git", "Machine Learning", "Data Science"]
+          },
+          "experienced": {
+            "en": "experienced",
+            "de": "geübt",
+            "list": [""]
+          },
+          "basicKnowledge": {
+            "en": "basic knowledge",
+            "de": "Grundwissen",
+            "list": ["Theano", "Keras", "ElasticSearch"]
+          }
+        },
+        "languages":{
+          "_name": {
+            "en": "languages",
+            "de": "Sprachen"
+          },
+          "firstLanguage": {
+            "en": "first language",
+            "de": "Muttersprache",
+            "names":{
+              "en": ["German"],
+              "de": ["Deutsch"]
+            }
+          },
+          "fluent": {
+            "en": "Fluent in speaking and writing (C2 GER)",
+            "de": "Fliessend in Schrift und Sprache (C2 GER)",
+            "names":{
+              "en": ["English", "Latin", "French"],
+              "de": ["Englisch", "Latain", "Französisch"]
+            }
+          }
+        }
+    },
+    "volunteerWork": {
+      "_name": {
+        "en": "volunteer work",
+        "de": "Freiwilligenarbeit"
+      },
+      "list": [
+        {
+          "from": 1768,
+          "to": 1768,
+          "title": {
+            "en": "Lettres à une princesse d'Allemagne",
+            "de": "Lettres à une princesse d'Allemagne"
+          },
+          "link": "",
+          "description": {
+            "en": "I teach the fundamentals of physics, astronomy, mathematics, philosophy as well as theology.",
+            "de": "Ich lehrte die Grundlagen in Physik, Astronomie, Mathematik, Philosophie und Theologie."
+          }
+        }
+    ]}
+}

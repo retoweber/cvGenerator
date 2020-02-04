@@ -1,0 +1,217 @@
+@font-face {
+    font-family: "Computer Modern";
+    src: url('../cmunrm.otf');
+}
+@font-face {
+    font-family: "Computer Modern";
+    src: url('../cmunrb.otf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Computer Modern";
+    src: url('../cmunsl.otf');
+    font-style: italic;
+}
+@font-face {
+    font-family: "Computer Modern";
+    src: url('../cmunbl.otf');
+    font-weight: bold;
+    font-style: italic;
+}
+body {
+    font-family: "Computer Modern", serif;
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+}
+
+td {
+    vertical-align: top;
+}
+
+
+@media(max-width:500px){
+    body {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+p,a,b,td {
+    font-size: 16px;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 24px;
+}
+h3{
+    font-size: 18.72px;
+}
+h4{
+    font-size:16px;
+}
+
+@media(max-width:500px){
+    p,a,b,td {
+        font-size: 10px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 12px;
+    }
+    h3{
+        font-size: 10px;
+    }
+    h4{
+        font-size:8px;
+    }
+}
+
+#portrait {
+    width:200px;
+}
+
+@media(max-width:500px){
+    #portrait {
+        width:150px;
+    }
+}
+
+#cvAll tr td:first-child {
+    text-align: right;
+    width: 128px;
+}
+
+#cvAll > tbody > tr > td > table {
+    width: 872px; /* 1000px - 8em = 1000px - 128px */
+}
+
+#cvAll > tbody > tr > td:nth-child(2) {
+    border-top: solid gray;
+    padding: 10px 10px 50px 10px;
+
+}
+@media(max-width:500px){
+    #cvAll > tbody > tr > td:nth-child(2) {
+        border-top: solid gray;
+        padding: 5px 5px 10px 5px;
+    }
+}
+
+#cvPersonalInfo > tbody > tr > td:first-child {
+    text-align: right;
+}
+
+#cvPersonalInfo > tbody > tr > td:nth-child(2) {
+    font-weight: bold;
+}
+
+#cvWorks > tbody > tr > td:first-child {
+    width: 128px;
+}
+
+#cvEducation > tbody > tr > td:first-child {
+    width: 128px;
+}
+
+#cvEducation > tbody > tr > td:last-child {
+    width: 196px;
+}
+
+#cvExperience > tbody > tr > td:first-child {
+    width: 128px;
+}
+
+#cvExperience > tbody > tr > td:last-child {
+    width: 644px;
+}
+
+#cvSkills h3 {
+    margin: 0px;
+}
+
+#cvSkills > tbody > tr > td:nth-last-child(2) {
+    text-align: right;
+}
+
+#cvSkills > tbody > tr > td:first-child {
+    width: 128px;
+}
+
+
+#cvSkills > tbody > tr > td:last-child {
+    width: 196px;
+}
+
+#cvVolunteerWork > tbody > tr > td:first-child {
+    width: 128px;
+}
+
+#cvVolunteerWork > tbody > tr > td:last-child {
+    width: 196px;
+}
+
+
+h1,h2 {
+    text-shadow: 1px 2px lightgray;
+}
+
+/*h1 {
+    font-size: 250%;
+}*/
+
+#audioExamples tr:nth-child(odd) {
+    background: #CCC;
+}
+
+#audioExamples td:nth-child(1) {
+    width: 300px;
+}
+
+#audioExamples th:nth-child(1) {
+    width: 300px;
+}
+
+td {
+    padding: 3px 10px;
+}
+
+#audioExamples td{
+    padding: 3px 10px;
+    width: 175px;
+}
+
+#audioExamples th{
+    text-align: left;
+    padding: 3px 10px;
+    width: 175px;
+}
+
+#languageLinks{
+    float: right;
+}
+
+#languageLinks td:nth-child(1) {
+    text-align: right;
+}
+
+a, a:visited, a:active {
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: overline;
+}
+
+audio {
+    width: 165px;
+}
+
+#audioExamples {
+    width: 1000px;
+}
